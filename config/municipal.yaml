@@ -1,0 +1,22 @@
+# Utah Pollinator Path - Municipal Opportunity Finder Configuration
+algorithm:
+  name: "municipal_v1"
+  version: "1.0.0"
+
+factors:
+  connectivity:
+    enabled: true
+    weight: 0.45
+  need_proxy:
+    enabled: true
+    weight: 0.30
+  row_feasibility:
+    enabled: true
+    weight: 0.15
+  september_gap:
+    enabled: true
+    weight: 0.10
+
+output:
+  top_n: 200
+  min_score: 0.30
